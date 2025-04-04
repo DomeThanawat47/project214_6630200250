@@ -1,0 +1,186 @@
+.course-card {
+    background: rgba(10, 10, 20, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 1000px;
+    width: 100%;
+    color: #00ff00;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid #00ff00;
+  }
+  
+  .course-card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+  
+  .add-btn {
+    padding: 10px 20px;
+    background: transparent;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  .add-btn:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00ff00;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #00ff00;
+    font-size: 14px;
+  }
+  
+  th {
+    background: rgba(0, 255, 0, 0.1);
+    color: #ff00ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #ff00ff;
+  }
+  
+  td {
+    color: #00ff00;
+  }
+  
+  tr {
+    transition: all 0.3s ease;
+  }
+  
+  tr:hover {
+    background: rgba(0, 255, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  .action-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  .edit-btn {
+    background: transparent;
+    color: #00ccff;
+    border: 2px solid #00ccff;
+    margin-right: 5px;
+  }
+  
+  .edit-btn:hover {
+    background: #00ccff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+  }
+  
+  .delete-btn {
+    background: transparent;
+    color: #ff3333;
+    border: 2px solid #ff3333;
+  }
+  
+  .delete-btn:hover {
+    background: #ff3333;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 51, 51, 0.8);
+  }
+  
+  .course-form {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  }
+  
+  .course-form input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #111;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .course-form input:focus {
+    outline: none;
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .save-btn {
+    background: transparent;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+  }
+  
+  .save-btn:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+  
+  .cancel-btn {
+    background: transparent;
+    color: #ff3333;
+    border: 2px solid #ff3333;
+  }
+  
+  .cancel-btn:hover {
+    background: #ff3333;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 51, 51, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .course-card {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    th, td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }

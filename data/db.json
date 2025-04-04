@@ -1,0 +1,37 @@
+{
+  "student": {
+    "id": 1,
+    "name": "ธนวัฒน์ แสนบุตร",
+    "studentId": "6630200250",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "school": "เทพศิรินทร์",
+    "images": [
+      "/images/student1.jpg",
+      "/images/student2.jpg",
+      "/images/student3.jpg"
+    ]
+  },
+  "courses": [
+    {
+      "id": 1,
+      "code": "01418223",
+      "name": "Computer Architecture",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "code": "01418231",
+      "name": "Data Science and Application Programs",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "id": 3,
+      "code": "01418231",
+      "name": "Data Structures and Algorithms",
+      "credits": 3,
+      "grade": "C+"
+    }
+  ]
+}

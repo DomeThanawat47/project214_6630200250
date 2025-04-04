@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* App Container */
+  .app-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/matrix-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #00ff00;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+
+  
+  /* Navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 30px;
+    border-bottom: 2px solid #00ff00;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  }
+  
+  .navbar a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .navbar a:hover {
+    color: #59d3ff;
+    text-shadow: 0 0 10px #60dbf4;
+  }
+  
+  .navbar a.active {
+    color: #66c8de;
+    font-weight: bold;
+    text-shadow: 0 0 10px #71f1f6;
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #6aa8ea;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar a:hover::after,
+  .navbar a.active::after {
+    width: 100%;
+  }
+  
+  /* Content */
+  .content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  }
